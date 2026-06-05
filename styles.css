@@ -1,1 +1,252 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* =========================
+   BASE STYLES (MOBILE FIRST)
+========================= */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f5e6c8;
+    color: #1f1f1f;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+.top-bar {
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: white;
+    border-bottom: 2px solid #d4af37;
+    padding: 15px 0;
+}
+
+/* mobile default: stacked */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+/* =========================
+   NAVIGATION (MOBILE FIRST)
+========================= */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 5px;
+    background-color: #d4af37;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    border: 2px solid #d4af37;
+    color: white;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section {
+    padding: 50px 20px;
+}
+
+.section.alt {
+    background-color: rgba(212, 175, 55, 0.15);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   SERVICES / CARDS
+========================= */
+.grid-3,
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-img img {
+    width: 250px;
+    border-radius: 6px;
+}
+
+/* =========================
+   HOURS
+========================= */
+.hours p {
+    margin: 5px 0;
+}
+
+/* =========================
+   GALLERY (MOBILE: scroll)
+========================= */
+#gallery .grid-3 {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+#gallery img {
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 50px 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+}
+
+/* =========================
+   DESKTOP (768px+)
+========================= */
+@media (min-width: 768px) {
+
+    /* HEADER becomes horizontal */
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* NAV becomes horizontal */
+    nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /* HERO text grows */
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    /* GRID expands */
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ABOUT becomes side-by-side */
+    .about {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+    }
+
+    /* GALLERY switches from scroll → grid */
+    #gallery .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow: visible;
+    }
+
+    #gallery img {
+        width: 100%;
+    }
+}
