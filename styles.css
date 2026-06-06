@@ -206,6 +206,40 @@ footer {
 }
 
 /* =========================
+   FOOTER SOCIAL BUTTONS
+========================= */
+
+.socials {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.socials a {
+    display: inline-block;
+    padding: 10px 16px;
+    width: fit-content;
+    min-width: 180px;
+    text-align: center;
+
+    background-color: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+
+    transition: 0.2s ease;
+}
+
+.socials a:hover {
+    background-color: #d4af37;
+    color: #1f1f1f;
+}
+/* =========================
    DESKTOP (768px+)
 ========================= */
 @media (min-width: 768px) {
