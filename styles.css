@@ -230,10 +230,33 @@ h2 {
 }
 
 /* =========================
-   HOURS
+   HOURS SECTION
 ========================= */
+
+.hours {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* spacing from About section */
+section:not(#about) {
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+/* title */
+.hours h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* each line */
 .hours p {
-    margin: 5px 0;
+    margin: 6px 0;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* =========================
