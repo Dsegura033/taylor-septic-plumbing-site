@@ -149,60 +149,74 @@ h2 {
     border-radius: 6px;
 }
 
+
 /* =========================
-   ABOUT SECTION (CLEAN RESET)
+   ABOUT SECTION (FINAL FIX)
 ========================= */
 
-#about.about-section {
+#about {
     width: 100%;
     padding: 80px 20px;
-    display: flex;
-    justify-content: center;
     box-sizing: border-box;
 }
 
-#about .about-inner {
+/* MAIN CONTAINER (your existing .container.about) */
+#about .container.about {
     width: 100%;
     max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    /* forces clean vertical stacking */
+    display: block;
+}
+
+/* TITLE */
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
-/* Title */
-#about .about-title {
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-/* Image */
-#about .about-image {
+/* IMAGE WRAPPER */
+#about .about-img {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
 }
 
-#about .about-image img {
+/* IMAGE */
+#about .about-img img {
     width: 100%;
-    max-width: 550px;
+    max-width: 600px;
     height: auto;
-    border-radius: 10px;
     display: block;
+    border-radius: 10px;
 }
 
-/* Text */
+/* TEXT */
 #about .about-text {
-    font-size: 18px;
-    line-height: 1.6;
+    width: 100%;
     max-width: 750px;
     margin: 0 auto;
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 1.6;
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 
-    #about.about-section {
+    #about {
         padding: 50px 15px;
     }
 
-    #about .about-title {
+    #about h2 {
         font-size: 26px;
     }
 
@@ -210,7 +224,7 @@ h2 {
         font-size: 16px;
     }
 
-    #about .about-image img {
+    #about .about-img img {
         max-width: 100%;
     }
 }
