@@ -150,41 +150,69 @@ h2 {
 }
 
 /* =========================
-   ABOUT
+   ABOUT SECTION (CLEAN RESET)
 ========================= */
 
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+#about.about-section {
     width: 100%;
-    padding: 60px 20px;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
 }
 
-.about h2 {
-    margin-bottom: 20px;
+#about .about-inner {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
 }
 
-.about-img {
+/* Title */
+#about .about-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Image */
+#about .about-image {
     display: flex;
     justify-content: center;
-    width: 100%;
+    margin-bottom: 25px;
 }
 
-.about-img img {
+#about .about-image img {
     width: 100%;
-    max-width: 600px;
+    max-width: 550px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    display: block;
 }
 
-.about-text {
-    max-width: 700px;
-    margin-top: 20px;
+/* Text */
+#about .about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    #about.about-section {
+        padding: 50px 15px;
+    }
+
+    #about .about-title {
+        font-size: 26px;
+    }
+
+    #about .about-text {
+        font-size: 16px;
+    }
+
+    #about .about-image img {
+        max-width: 100%;
+    }
 }
 
 /* =========================
