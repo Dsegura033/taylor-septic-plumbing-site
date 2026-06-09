@@ -29,6 +29,8 @@
         <div class="logo">
     <img src="pictures/taylorlogo2.png" alt="Taylor Septic & Plumbing Logo">
 </div>
+        
+ <button class="menu-toggle">☰</button>
 
         <nav>
             <a href="#home">Home</a>
@@ -301,5 +303,15 @@
 
 </footer>
 
+    
+<-- Script -->
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
 </body>
 </html>
