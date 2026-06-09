@@ -48,13 +48,14 @@ header {
 /* mobile default: stacked */
 .header-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 15px;
 }
 
 .logo img {
-    width: 200px;
+    width: 190px;
 }
 
 
