@@ -314,7 +314,13 @@ section:not(#about) {
     flex-shrink: 0;
     border-radius: 6px;
     display: block;
+    transition: 0.2s ease;
 }
+
+#gallery a {
+    display: block;
+}
+
 /* =========================
    CTA
 ========================= */
