@@ -293,21 +293,28 @@ section:not(#about) {
 }
 
 /* =========================
-   GALLERY (MOBILE: scroll)
+   GALLERY (HORIZONTAL SCROLL)
 ========================= */
 #gallery .grid-3 {
     display: flex;
     overflow-x: auto;
     gap: 10px;
     padding-bottom: 10px;
+
+    /* optional: makes scrolling smoother on mobile */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
+/* keeps all images uniform */
 #gallery img {
     width: 250px;
+    height: 200px;
+    object-fit: cover;
     flex-shrink: 0;
     border-radius: 6px;
+    display: block;
 }
-
 /* =========================
    CTA
 ========================= */
