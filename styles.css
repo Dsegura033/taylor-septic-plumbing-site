@@ -49,9 +49,9 @@ header {
 .header-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .logo img {
