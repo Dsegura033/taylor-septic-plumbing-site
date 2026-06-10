@@ -45,13 +45,13 @@ header {
     border-bottom: 2px solid #d4af37;
     padding: 15px 0;
 }
-/* mobile default: stacked */
+
 .header-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .logo img {
