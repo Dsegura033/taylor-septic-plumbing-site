@@ -232,29 +232,12 @@
 
         <div class="grid-3">
 
-            <a href="pictures/backflowmaybe.png" target="_blank">
-                <img src="pictures/backflowmaybe.png" alt="Work Pic 1">
-            </a>
-
-            <a href="pictures/waterheater.png" target="_blank">
-                <img src="pictures/waterheater.png" alt="Work Pic 2">
-            </a>
-
-            <a href="pictures/mikes.png" target="_blank">
-                <img src="pictures/mikes.png" alt="Work Pic 3">
-            </a>
-
-            <a href="pictures/julian.png" target="_blank">
-                <img src="pictures/julian.png" alt="Work Pic 4">
-            </a>
-
-            <a href="pictures/benito.png" target="_blank">
-                <img src="pictures/benito.png" alt="Work Pic 5">
-            </a>
-
-            <a href="pictures/thevan.png" target="_blank">
-                <img src="pictures/thevan.png" alt="Work Pic 6">
-            </a>
+            <img src="pictures/backflowmaybe.png" alt="Work Pic 1" onclick="openLightbox(this)">
+            <img src="pictures/waterheater.png" alt="Work Pic 2" onclick="openLightbox(this)">
+            <img src="pictures/mikes.png" alt="Work Pic 3" onclick="openLightbox(this)">
+            <img src="pictures/julian.png" alt="Work Pic 4" onclick="openLightbox(this)">
+            <img src="pictures/benito.png" alt="Work Pic 5" onclick="openLightbox(this)">
+            <img src="pictures/thevan.png" alt="Work Pic 6" onclick="openLightbox(this)">
 
         </div>
 
@@ -324,6 +307,11 @@
 
 </footer>
 
+    <!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded image">
+</div>
     
 
 <script>
@@ -334,5 +322,20 @@ menuToggle.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
 </script>
+    
+    <script>
+function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+    
 </body>
 </html>
