@@ -183,59 +183,69 @@ h2 {
 
 
 /* =========================
-   ABOUT SECTION (FINAL FIX)
+   ABOUT + HOURS
 ========================= */
 
-#about {
-    width: 100%;
-    padding: 80px 20px;
-    box-sizing: border-box;
-}
-
-/* MAIN CONTAINER (your existing .container.about) */
-#about .container.about {
-    width: 100%;
-    max-width: 900px;
+.about-hours {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
-
-    /* forces clean vertical stacking */
-    display: block;
 }
 
-/* TITLE */
-#about h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    text-align: center;
+.about-card,
+.hours-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-/* IMAGE WRAPPER */
-#about .about-img {
+.about-card h2,
+.hours-card h2 {
+    margin-bottom: 20px;
+}
+
+.about-img {
+    margin-bottom: 20px;
+}
+
+.about-img img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-
-/* IMAGE */
-#about .about-img img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
     display: block;
     border-radius: 10px;
 }
 
-/* TEXT */
-#about .about-text {
-    width: 100%;
-    max-width: 750px;
-    margin: 0 auto;
-    text-align: center;
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
 
-    font-size: 18px;
-    line-height: 1.6;
+.hours-list p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.hours-card {
+    position: sticky;
+    top: 100px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-hours {
+        grid-template-columns: 1fr;
+    }
+
+    .hours-card {
+        position: static;
+    }
 }
 
 /* =========================
@@ -244,51 +254,20 @@ h2 {
 
 @media (max-width: 768px) {
 
-    #about {
-        padding: 50px 15px;
+    .about-card,
+    .hours-card {
+        padding: 20px;
     }
 
-    #about h2 {
-        font-size: 26px;
+    .about-card h2,
+    .hours-card h2 {
+        font-size: 28px;
     }
 
-    #about .about-text {
+    .about-text p,
+    .hours-list p {
         font-size: 16px;
     }
-
-    #about .about-img img {
-        max-width: 100%;
-    }
-}
-
-/* =========================
-   HOURS SECTION
-========================= */
-
-.hours {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* spacing from About section */
-section:not(#about) {
-    padding: 60px 20px;
-    box-sizing: border-box;
-}
-
-/* title */
-.hours h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-/* each line */
-.hours p {
-    margin: 6px 0;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
 /* =========================
