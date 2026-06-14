@@ -197,10 +197,11 @@ h2 {
 
 .about-card,
 .hours-card {
-    background: #fff;
+    background: #f0f0f0;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-top: 4px solid #d4af37;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .about-card h2,
