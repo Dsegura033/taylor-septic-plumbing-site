@@ -281,8 +281,8 @@ h2 {
 .accordion-btn {
 
     width:100%;
-    background:#0f2b46;
-    color:white;
+    background:#d4af37 /* gold */
+    color:#0f2b4b /* Navy*/
 
     border:none;
     padding:18px 20px;
