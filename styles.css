@@ -195,80 +195,322 @@ h2 {
     margin: 0 auto;
 }
 
+
+/* =========================
+   CARDS
+========================= */
+
 .about-card,
 .hours-card {
+
     background: #ead8b5;
     padding: 30px;
     border-radius: 10px;
     border-top: 4px solid #d4af37;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
 }
+
 
 .about-card h2,
 .hours-card h2 {
-    margin-bottom: 20px;
+
+    margin-bottom: 25px;
+
 }
 
-.about-img {
-    margin-bottom: 20px;
+
+/* =========================
+   COMPANY INTRO
+========================= */
+
+.company-overview {
+
+    margin-bottom: 35px;
+
 }
 
-.about-img img {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
+
+.company-overview img {
+
+    width:100%;
+    display:block;
+    border-radius:10px;
+    margin-bottom:20px;
+
 }
 
-.about-text p {
-    margin-bottom: 15px;
-    line-height: 1.7;
+
+.company-text p {
+
+    line-height:1.7;
+    margin-bottom:15px;
+
 }
+
+
+/* =========================
+   DROPDOWN / ACCORDION
+========================= */
+
+.team-section {
+
+    margin-top:35px;
+
+}
+
+
+.team-section h3 {
+
+    color:#0f2b46;
+    margin-bottom:15px;
+    font-size:26px;
+
+}
+
+
+
+.accordion-item {
+
+    margin-bottom:15px;
+
+}
+
+
+
+.accordion-btn {
+
+    width:100%;
+    background:#0f2b46;
+    color:white;
+
+    border:none;
+    padding:18px 20px;
+
+    border-radius:8px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.accordion-btn:hover {
+
+    background:#163a5c;
+
+}
+
+
+.accordion-btn span {
+
+    font-size:25px;
+
+}
+
+
+
+/* Hidden Content */
+
+.accordion-content {
+
+    display:none;
+
+    background:#f8f1e2;
+
+    padding:20px;
+
+    border-radius:0 0 8px 8px;
+
+    margin-top:5px;
+
+}
+
+
+
+.accordion-content.active {
+
+    display:block;
+
+}
+
+
+
+/* =========================
+   TEAM CARDS INSIDE DROPDOWN
+========================= */
+
+
+.team-grid {
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+
+
+
+.team-card {
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    padding-bottom:20px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+
+}
+
+
+
+.team-card img {
+
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+.team-card h4 {
+
+    margin-top:15px;
+    margin-bottom:5px;
+
+    color:#0f2b46;
+
+}
+
+
+
+.team-title {
+
+    color:#d4af37;
+    font-weight:700;
+
+    display:block;
+    margin-bottom:10px;
+
+}
+
+
+
+.team-card p {
+
+    padding:0 15px;
+    line-height:1.5;
+
+}
+
+
+
+/* =========================
+   HOURS
+========================= */
+
 
 .hours-list p {
-    margin-bottom: 15px;
-    line-height: 1.5;
+
+    margin-bottom:15px;
+    line-height:1.5;
+
 }
 
+
+
 .hours-card {
-    position: sticky;
-    top: 100px;
+
+    position:sticky;
+    top:100px;
+    height:max-content;
+
 }
+
+
 
 /* =========================
    TABLET
 ========================= */
 
-@media (max-width: 900px) {
 
-    .about-hours {
-        grid-template-columns: 1fr;
-    }
+@media(max-width:900px){
 
-    .hours-card {
-        position: static;
-    }
+
+.about-hours{
+
+    grid-template-columns:1fr;
+
 }
+
+
+.hours-card{
+
+    position:static;
+
+}
+
+
+}
+
+
 
 /* =========================
    MOBILE
 ========================= */
 
-@media (max-width: 768px) {
 
-    .about-card,
-    .hours-card {
-        padding: 20px;
-    }
+@media(max-width:768px){
 
-    .about-card h2,
-    .hours-card h2 {
-        font-size: 28px;
-    }
 
-    .about-text p,
-    .hours-list p {
-        font-size: 16px;
-    }
+.about-card,
+.hours-card{
+
+    padding:20px;
+
+}
+
+
+
+.about-card h2,
+.hours-card h2{
+
+    font-size:28px;
+
+}
+
+
+
+.team-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.team-card img{
+
+    height:250px;
+
+}
+
+
 }
 
 /* =========================
