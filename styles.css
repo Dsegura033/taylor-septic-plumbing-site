@@ -253,18 +253,10 @@ h2 {
    DROPDOWN / ACCORDION
 ========================= */
 
+
 .team-section {
 
     margin-top:35px;
-
-}
-
-
-.team-section h3 {
-
-    color:#0f2b46;
-    margin-bottom:15px;
-    font-size:26px;
 
 }
 
@@ -281,10 +273,12 @@ h2 {
 .accordion-btn {
 
     width:100%;
-    background:#d4af37 /* gold */
-    color:#0f2b4b /* Navy*/
 
-    border:none;
+    background:#f8f1e2;
+    color:#0f2b46;
+
+    border:2px solid #d4af37;
+
     padding:18px 20px;
 
     border-radius:8px;
@@ -294,7 +288,7 @@ h2 {
     align-items:center;
 
     font-size:18px;
-    font-weight:600;
+    font-weight:700;
 
     cursor:pointer;
 
@@ -303,16 +297,27 @@ h2 {
 }
 
 
+
 .accordion-btn:hover {
 
-    background:#163a5c;
+    background:#ead8b5;
 
 }
 
 
-.accordion-btn span {
+
+.accordion-title {
+
+    color:#0f2b46;
+
+}
+
+
+
+.accordion-icon {
 
     font-size:25px;
+    color:#d4af37;
 
 }
 
@@ -341,8 +346,6 @@ h2 {
     display:block;
 
 }
-
-
 
 /* =========================
    TEAM CARDS INSIDE DROPDOWN
