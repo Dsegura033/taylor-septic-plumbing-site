@@ -677,30 +677,41 @@ function closeLightbox() {
 }
 </script>
 
-    <script>
+   <script>
 
 const accordionButtons = document.querySelectorAll(".accordion-btn");
 
 
 accordionButtons.forEach(button => {
 
+
     button.addEventListener("click", () => {
 
+
         const content = button.nextElementSibling;
+
+        const icon = button.querySelector(".accordion-icon");
+
 
         content.classList.toggle("active");
 
 
-        const icon = button.querySelector("span");
+        if(content.classList.contains("active")) {
 
-        icon.textContent =
-        content.classList.contains("active")
-        ? "−"
-        : "+";
+            icon.textContent = "−";
+
+        } else {
+
+            icon.textContent = "+";
+
+        }
+
 
     });
 
+
 });
+
 
 </script>
     
