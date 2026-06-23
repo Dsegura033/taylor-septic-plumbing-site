@@ -638,6 +638,34 @@ function closeLightbox() {
     document.getElementById("lightbox").style.display = "none";
 }
 </script>
+
+    <script>
+
+const accordionButtons = document.querySelectorAll(".accordion-btn");
+
+
+accordionButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const content = button.nextElementSibling;
+
+        content.classList.toggle("active");
+
+
+        const icon = button.querySelector("span");
+
+        icon.textContent =
+        content.classList.contains("active")
+        ? "−"
+        : "+";
+
+    });
+
+});
+
+</script>
+    
     
 </body>
 </html>
