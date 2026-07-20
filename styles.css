@@ -177,17 +177,13 @@ nav a:hover {
     color: white;
 }
 
-/* =========================
-   MOBILE HERO ADJUSTMENT
-========================= */
-
 @media(max-width:768px){
 
     .hero {
 
-        min-height:500px;
-
-        background-position:center top;
+        min-height:600px;
+        background-size: auto 100%;
+        background-position:center center;
 
     }
 
