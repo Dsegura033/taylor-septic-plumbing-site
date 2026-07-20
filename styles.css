@@ -134,10 +134,13 @@ nav a:hover {
 .hero-overlay {
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero h1 {
@@ -147,6 +150,9 @@ nav a:hover {
 
 .hero-buttons {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
