@@ -216,7 +216,7 @@ h2 {
 
 .grid-4 .card {
 
-    padding:25px;
+    padding:30px 25px;
 
     background:#ead8b5;
 
@@ -229,6 +229,41 @@ h2 {
     box-shadow:0 6px 15px rgba(0,0,0,0.12);
 
 }
+
+
+/* ICONS */
+
+.why-icon {
+
+    width:90px;
+    height:90px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.why-icon img {
+
+    width:90px;
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid #d4af37;
+
+    padding:8px;
+
+    background:#f8f1e2;
+
+}
+
 
 
 .grid-4 h3 {
@@ -249,13 +284,15 @@ h2 {
 }
 
 
-/* MOBILE HORIZONTAL SCROLL ONLY */
+/* =========================
+   MOBILE HORIZONTAL SCROLL
+========================= */
 
 @media(max-width:768px){
 
     .grid-4 {
 
-        display:flex !important;
+        display:flex;
 
         flex-wrap:nowrap;
 
