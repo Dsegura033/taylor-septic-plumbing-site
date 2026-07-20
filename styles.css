@@ -292,7 +292,9 @@ h2 {
 
     .grid-4 {
 
-        display:flex;
+        display:flex !important;
+
+        flex-direction:row;
 
         flex-wrap:nowrap;
 
