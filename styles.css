@@ -196,28 +196,9 @@ h2 {
    WHY CHOOSE US
 ========================= */
 
-.grid-4 {
-
-    display:flex;
-    gap:20px;
-
-    overflow-x:auto;
-
-    scroll-behavior:smooth;
-
-    padding:10px 5px 20px;
-
-    -webkit-overflow-scrolling:touch;
-
-}
-
-
 .grid-4 .card {
 
-    min-width:280px;
-    flex-shrink:0;
-
-    padding:30px 25px;
+    padding:25px;
 
     background:#ead8b5;
 
@@ -246,6 +227,38 @@ h2 {
 .grid-4 p {
 
     line-height:1.6;
+
+}
+
+
+/* MOBILE HORIZONTAL SCROLL */
+
+@media(max-width:768px){
+
+    .grid-4 {
+
+        display:flex;
+
+        gap:20px;
+
+        overflow-x:auto;
+
+        scroll-behavior:smooth;
+
+        padding:10px 5px 20px;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+
+    .grid-4 .card {
+
+        min-width:85%;
+
+        flex-shrink:0;
+
+    }
 
 }
 /* =========================
