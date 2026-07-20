@@ -178,6 +178,22 @@ nav a:hover {
 }
 
 /* =========================
+   MOBILE HERO ADJUSTMENT
+========================= */
+
+@media(max-width:768px){
+
+    .hero {
+
+        min-height:500px;
+
+        background-position:center top;
+
+    }
+
+}
+
+/* =========================
    SECTIONS
 ========================= */
 .section {
