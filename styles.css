@@ -231,21 +231,23 @@ h2 {
 }
 
 
-/* MOBILE HORIZONTAL SCROLL */
+/* MOBILE HORIZONTAL SCROLL ONLY */
 
 @media(max-width:768px){
 
     .grid-4 {
 
-        display:flex;
+        display:flex !important;
 
-        gap:20px;
+        flex-wrap:nowrap;
 
         overflow-x:auto;
 
-        scroll-behavior:smooth;
+        gap:20px;
 
         padding:10px 5px 20px;
+
+        scroll-behavior:smooth;
 
         -webkit-overflow-scrolling:touch;
 
@@ -256,11 +258,13 @@ h2 {
 
         min-width:85%;
 
-        flex-shrink:0;
+        flex:0 0 85%;
 
     }
 
 }
+
+
 /* =========================
    SERVICES / CARDS
 ========================= */
