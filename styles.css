@@ -244,23 +244,14 @@ h2 {
 }
 
 
+
 /* =========================
    COMPANY INTRO
 ========================= */
 
-.company-overview {
+.company-text {
 
     margin-bottom: 35px;
-
-}
-
-
-.company-overview img {
-
-    width:100%;
-    display:block;
-    border-radius:10px;
-    margin-bottom:20px;
 
 }
 
@@ -385,10 +376,9 @@ h2 {
 }
 
 
-
 .team-card {
 
-    background:white;
+    background:#f8f1e2;
 
     border-radius:10px;
 
