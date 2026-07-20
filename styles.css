@@ -181,14 +181,14 @@ nav a:hover {
 
     .hero {
 
-        min-height:600px;
-        background-size: auto 100%;
+        background-size: auto 80%;
         background-position:center center;
+        background-repeat:no-repeat;
+        background-color:#333;
 
     }
 
 }
-
 /* =========================
    SECTIONS
 ========================= */
