@@ -346,27 +346,34 @@ h2 {
 ========================= */
 
 .about-hours {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-    align-items: start;
-    max-width: 1200px;
-    margin: 0 auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:35px;
+    align-items:start;
+
+    max-width:1200px;
+    margin:0 auto;
+
 }
 
 
 /* =========================
-   CARDS
+   MAIN CARDS
 ========================= */
 
 .about-card,
 .hours-card {
 
-    background: #ead8b5;
-    padding: 30px;
-    border-radius: 10px;
-    border-top: 4px solid #d4af37;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    background:#ead8b5;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    border-top:5px solid #d4af37;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
 
 }
 
@@ -374,7 +381,11 @@ h2 {
 .about-card h2,
 .hours-card h2 {
 
-    margin-bottom: 25px;
+    color:#0f2b46;
+
+    margin-bottom:25px;
+
+    font-size:32px;
 
 }
 
@@ -386,35 +397,86 @@ h2 {
 
 .company-text {
 
-    margin-bottom: 35px;
+    margin-bottom:30px;
 
 }
 
 
 .company-text p {
 
-    line-height:1.7;
-    margin-bottom:15px;
+    line-height:1.8;
+
+    margin-bottom:18px;
 
 }
 
 
+
 /* =========================
-   DROPDOWN / ACCORDION
+   BLUEPRINT FEATURE
 ========================= */
 
+.blueprint-feature {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    background:#f8f1e2;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin:30px 0;
+
+    border-left:4px solid #d4af37;
+
+}
+
+
+
+.blueprint-feature img {
+
+    width:45%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+
+
+.blueprint-text h3 {
+
+    color:#0f2b46;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.blueprint-text p {
+
+    line-height:1.6;
+
+}
+
+
+
+/* =========================
+   TEAM DROPDOWN
+========================= */
 
 .team-section {
 
     margin-top:35px;
-
-}
-
-
-
-.accordion-item {
-
-    margin-bottom:15px;
 
 }
 
@@ -425,24 +487,26 @@ h2 {
     width:100%;
 
     background:#f8f1e2;
+
     color:#0f2b46;
 
     border:2px solid #d4af37;
 
     padding:18px 20px;
 
-    border-radius:8px;
+    border-radius:10px;
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     font-size:18px;
-    font-weight:700;
+
+    font-weight:bold;
 
     cursor:pointer;
-
-    transition:0.3s;
 
 }
 
@@ -466,14 +530,15 @@ h2 {
 
 .accordion-icon {
 
-    font-size:25px;
     color:#d4af37;
+
+    font-size:25px;
 
 }
 
 
 
-/* Hidden Content */
+/* DROPDOWN CONTENT */
 
 .accordion-content {
 
@@ -483,7 +548,7 @@ h2 {
 
     padding:20px;
 
-    border-radius:0 0 8px 8px;
+    border-radius:0 0 10px 10px;
 
     margin-top:5px;
 
@@ -497,33 +562,35 @@ h2 {
 
 }
 
-/* =========================
-   TEAM CARDS INSIDE DROPDOWN
-========================= */
 
+
+/* =========================
+   TEAM CARDS
+========================= */
 
 .team-grid {
 
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
+
     gap:20px;
 
 }
 
 
+
 .team-card {
 
-    background:#f8f1e2;
+    background:#ead8b5;
 
-    border-radius:10px;
+    border-radius:12px;
 
     overflow:hidden;
 
     text-align:center;
 
     padding-bottom:20px;
-
-    box-shadow:0 3px 10px rgba(0,0,0,0.08);
 
 }
 
@@ -532,6 +599,7 @@ h2 {
 .team-card img {
 
     width:100%;
+
     height:220px;
 
     object-fit:cover;
@@ -543,7 +611,6 @@ h2 {
 .team-card h4 {
 
     margin-top:15px;
-    margin-bottom:5px;
 
     color:#0f2b46;
 
@@ -553,10 +620,12 @@ h2 {
 
 .team-title {
 
-    color:#d4af37;
-    font-weight:700;
-
     display:block;
+
+    color:#d4af37;
+
+    font-weight:bold;
+
     margin-bottom:10px;
 
 }
@@ -566,31 +635,56 @@ h2 {
 .team-card p {
 
     padding:0 15px;
-    line-height:1.5;
 
 }
 
 
 
 /* =========================
-   HOURS
+   HOURS CARD
 ========================= */
+
+.hours-card {
+
+    position:sticky;
+
+    top:100px;
+
+    height:max-content;
+
+}
+
 
 
 .hours-list p {
 
-    margin-bottom:15px;
+    margin-bottom:18px;
+
     line-height:1.5;
 
 }
 
 
 
-.hours-card {
+.hours-list strong {
 
-    position:sticky;
-    top:100px;
-    height:max-content;
+    color:#0f2b46;
+
+}
+
+
+
+.hours-note {
+
+    margin-top:25px;
+
+    padding:15px;
+
+    background:#f8f1e2;
+
+    border-radius:10px;
+
+    border-left:4px solid #d4af37;
 
 }
 
@@ -600,18 +694,17 @@ h2 {
    TABLET
 ========================= */
 
-
 @media(max-width:900px){
 
 
-.about-hours{
+.about-hours {
 
     grid-template-columns:1fr;
 
 }
 
 
-.hours-card{
+.hours-card {
 
     position:static;
 
@@ -621,17 +714,15 @@ h2 {
 }
 
 
-
 /* =========================
    MOBILE
 ========================= */
-
 
 @media(max-width:768px){
 
 
 .about-card,
-.hours-card{
+.hours-card {
 
     padding:20px;
 
@@ -640,15 +731,33 @@ h2 {
 
 
 .about-card h2,
-.hours-card h2{
+.hours-card h2 {
 
-    font-size:28px;
+    font-size:26px;
 
 }
 
 
 
-.team-grid{
+.blueprint-feature {
+
+    flex-direction:column;
+
+}
+
+
+
+.blueprint-feature img {
+
+    width:100%;
+
+    height:220px;
+
+}
+
+
+
+.team-grid {
 
     grid-template-columns:1fr;
 
@@ -656,7 +765,7 @@ h2 {
 
 
 
-.team-card img{
+.team-card img {
 
     height:250px;
 
