@@ -563,26 +563,28 @@ h2 {
 
 .team-card {
     flex: 0 0 240px;
-    background: #ead8b5;
-    border-radius: 14px;
+    background: #f5efe2;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 16px;
     overflow: hidden;
     text-align: center;
     scroll-snap-align: start;
-    box-shadow: 0 6px 18px rgba(0,0,0,.12);
-    transition: transform .25s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .team-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
 .team-card img {
-    width: 100%;
+    width: 82%;
     aspect-ratio: 4 / 5;
     object-fit: contain;
-    background: #f7f7f7;
     padding: 12px;
     display: block;
+    margin: 18px auto 0;
 }
 
 .team-card h4 {
