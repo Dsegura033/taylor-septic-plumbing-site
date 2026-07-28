@@ -480,100 +480,56 @@ h2 {
 
 }
 
-
-
 /* =========================
    TEAM DROPDOWN
 ========================= */
 
 .team-section {
-
-    margin-top:35px;
-
+    margin-top: 35px;
 }
-
-
 
 .accordion-btn {
-
-    width:100%;
-
-    background:#f8f1e2;
-
-    color:#0f2b46;
-
-    border:2px solid #d4af37;
-
-    padding:18px 20px;
-
-    border-radius:10px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
+    width: 100%;
+    background: #f8f1e2;
+    color: #0f2b46;
+    border: 2px solid #d4af37;
+    padding: 18px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
-
-
 
 .accordion-btn:hover {
-
-    background:#ead8b5;
-
+    background: #ead8b5;
 }
-
-
 
 .accordion-title {
-
-    color:#0f2b46;
-
+    color: #0f2b46;
 }
-
-
 
 .accordion-icon {
-
-    color:#d4af37;
-
-    font-size:25px;
-
+    color: #d4af37;
+    font-size: 25px;
 }
-
-
 
 /* DROPDOWN CONTENT */
 
 .accordion-content {
-
-    display:none;
-
-    background:#f8f1e2;
-
-    padding:20px;
-
-    border-radius:0 0 10px 10px;
-
-    margin-top:5px;
-
+    display: none;
+    background: #f8f1e2;
+    padding: 25px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 5px;
 }
-
-
 
 .accordion-content.active {
-
-    display:block;
-
+    display: block;
 }
-
 
 
 /* =========================
@@ -581,73 +537,69 @@ h2 {
 ========================= */
 
 .team-grid {
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:20px;
-
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #d4af37 #ead8b5;
 }
 
+/* Chrome / Edge / Safari */
+.team-grid::-webkit-scrollbar {
+    height: 10px;
+}
 
+.team-grid::-webkit-scrollbar-track {
+    background: #ead8b5;
+    border-radius: 10px;
+}
+
+.team-grid::-webkit-scrollbar-thumb {
+    background: #d4af37;
+    border-radius: 10px;
+}
 
 .team-card {
-
-    background:#ead8b5;
-
-    border-radius:12px;
-
-    overflow:hidden;
-
-    text-align:center;
-
-    padding-bottom:20px;
-
+    flex: 0 0 240px;
+    background: #ead8b5;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    scroll-snap-align: start;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    transition: transform .25s ease;
 }
 
-
+.team-card:hover {
+    transform: translateY(-5px);
+}
 
 .team-card img {
-
-    width:100%;
-
-    height:220px;
-
-    object-fit:cover;
-
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: contain;
+    background: #f7f7f7;
+    padding: 12px;
+    display: block;
 }
-
-
 
 .team-card h4 {
-
-    margin-top:15px;
-
-    color:#0f2b46;
-
+    margin: 18px 15px 8px;
+    color: #0f2b46;
 }
-
-
 
 .team-title {
-
-    display:block;
-
-    color:#d4af37;
-
-    font-weight:bold;
-
-    margin-bottom:10px;
-
+    display: block;
+    color: #d4af37;
+    font-weight: bold;
+    margin-bottom: 12px;
 }
 
-
-
 .team-card p {
-
-    padding:0 15px;
-
+    padding: 0 18px 22px;
+    line-height: 1.6;
 }
 
 
@@ -690,70 +642,57 @@ h2 {
    TABLET
 ========================= */
 
-@media(max-width:900px){
+@media (max-width:900px) {
 
+    .about-hours {
+        grid-template-columns: 1fr;
+    }
 
-.about-hours {
+    .hours-card {
+        position: static;
+    }
 
-    grid-template-columns:1fr;
-
-}
-
-
-.hours-card {
-
-    position:static;
-
-}
-
+    .team-card {
+        flex: 0 0 320px;
+    }
 
 }
-
 
 
 /* =========================
    MOBILE
 ========================= */
 
-@media(max-width:768px){
+@media (max-width:768px) {
 
+    .about-card,
+    .hours-card {
+        padding: 20px;
+    }
 
-.about-card,
-.hours-card {
+    .about-card h2,
+    .hours-card h2 {
+        font-size: 26px;
+    }
 
-    padding:20px;
+    .accordion-content {
+        padding: 18px;
+    }
 
-}
+    .team-grid {
+        gap: 18px;
+        padding-bottom: 10px;
+    }
 
+    .team-card {
+        flex: 0 0 85%;
+    }
 
-
-.about-card h2,
-.hours-card h2 {
-
-    font-size:26px;
-
-}
-
-
-
-.team-grid {
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.team-card img {
-
-    height:250px;
+    .team-card img {
+        padding: 10px;
+    }
 
 }
-
-
-}
-
-
 /* =========================
    GALLERY (HORIZONTAL SCROLL)
 ========================= */
