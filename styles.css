@@ -175,8 +175,8 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.btn,
-.btn.secondary {
+.hero .btn,
+.hero .btn.secondary {
     display: inline-block;
     padding: 12px 22px;
     background: #1f1f1f;
@@ -188,8 +188,8 @@ nav a:hover {
     transition: all .3s ease;
 }
 
-.btn:hover,
-.btn.secondary:hover {
+.hero .btn:hover,
+.hero .btn.secondary:hover {
     background: #333;
     border-color: #333;
     color: #ead8b5;
