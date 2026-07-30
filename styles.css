@@ -172,18 +172,19 @@ nav a:hover {
 
 .btn {
     display: inline-block;
-    padding: 12px 18px;
-    background-color: #d4af37;
-    color: #1f1f1f;
+    padding: 12px 22px;
+    background: #1f1f1f;
+    color: #ead8b5;
     text-decoration: none;
     font-weight: bold;
+    border: 2px solid #1f1f1f;
     border-radius: 5px;
     transition: all .3s ease;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0,0,0,.18);
+    background: transparent;
+    color: #1f1f1f;
 }
 
 .btn.secondary {
