@@ -598,8 +598,8 @@ h2 {
 
 .team-card {
     flex: 0 0 240px;
-    background: #f5efe2;
-    border: 1px solid rgba(212, 175, 55, 0.25);
+    background: #ead8b5;
+    border: 1px solid rgba(212, 175, 55, 0.35);
     border-radius: 16px;
     overflow: hidden;
     text-align: center;
@@ -607,7 +607,6 @@ h2 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .team-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
@@ -620,7 +619,7 @@ h2 {
     padding: 12px;
     display: block;
     margin: 18px auto 0;
-    background: #f5efe2;
+    background: transparent;
     border-radius: 10px;
 }
 
