@@ -175,8 +175,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.hero .btn,
-.hero .btn.secondary {
+.btn {
     display: inline-block;
     padding: 12px 22px;
     background: transparent;
@@ -188,8 +187,7 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 
-.hero .btn:hover,
-.hero .btn.secondary:hover {
+.btn:hover {
     background: #d4af37;
     color: #1f1f1f;
     border-color: #d4af37;
