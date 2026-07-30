@@ -132,18 +132,28 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 44px;
-    margin-bottom: 20px;
-    line-height: 1.2;
+    font-size: 56px;
+    margin-bottom: 8px;
+    line-height: 1.1;
     color: #1f1f1f;
 }
 
-.hero p {
-    max-width: 700px;
-    margin: 0 auto 35px;
+.hero-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6f4f28;
+    margin-bottom: 10px;
+}
+
+.hero-location,
+.hero-services {
     font-size: 18px;
-    line-height: 1.7;
     color: #3f3224;
+    margin-bottom: 6px;
+}
+
+.hero-services {
+    margin-bottom: 35px;
 }
 
 .hero-buttons {
