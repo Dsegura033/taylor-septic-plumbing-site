@@ -787,13 +787,23 @@ h2 {
     cursor: pointer;
 }
 
-/* =========================
-   CTA
-========================= */
-.cta {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 50px 20px;
+/* CTA BUTTON */
+
+.cta .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.cta .btn:hover {
+    background: #d4af37;
+    color: #1f1f1f;
 }
 
 /* =========================
