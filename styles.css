@@ -620,6 +620,8 @@ h2 {
     padding: 12px;
     display: block;
     margin: 18px auto 0;
+    background: #f5efe2;
+    border-radius: 10px;
 }
 
 .team-card h4 {
