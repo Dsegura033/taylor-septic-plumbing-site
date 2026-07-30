@@ -787,6 +787,13 @@ h2 {
     cursor: pointer;
 }
 
+
+.cta {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 50px 20px;
+}
+
 /* CTA BUTTON */
 
 .cta .btn {
