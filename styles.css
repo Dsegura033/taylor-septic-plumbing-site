@@ -38,9 +38,25 @@ body {
 ========================= */
 .top-bar {
     background-color: #1f1f1f;
-    color: white;
+    color: #ffffff;
     font-size: 13px;
-    padding: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-bar p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+    color: #d4af37;
 }
 
 /* =========================
